@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Typography from 'material-ui/Typography';
+import AddressGoogleMap from '../components/AddressGoogleMap'
 
 class App extends Component {
   constructor(props) {
@@ -13,14 +14,12 @@ class App extends Component {
 
   render(){
 
-    return (
-    <div className='mdl-grid'>
-         <Typography type="display4" gutterBottom>
+    return <div className="mdl-grid">
+        <Typography type="display4" gutterBottom>
           Title Here
         </Typography>
-      <br/>
-    </div>
-   );
+        <br />
+      </div>;
   }
 
 }

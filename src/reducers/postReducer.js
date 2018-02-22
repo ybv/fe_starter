@@ -1,10 +1,12 @@
 import * as types from '../constants/ActionTypes'
 
 const initialState = {
-
+  isFetching: false,
+  posts: [],
+  failed: false
 }
 
-export function search(state = initialState, action) {
+export function posts(state = initialState, action) {
   switch (action.type) {
     default:
       return state
